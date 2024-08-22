@@ -38,14 +38,12 @@
 
 </head>
 <body>
-    <header class="container mx-auto h-96 bg-gradient-to-b from-gray-100 to-white">
-        <nav>
-            <div class="navbar justify-between">
-                <div class="navbar-start">
-                  <!-- ---------------------- -->
-
-                  <!-- --------------- -->
-                  <a class="flex items-center gap-2"><span><i class="fa-solid fa-arrow-right h-7 w-7 bg-btn-color  text-[#1C1C1C] rounded-full flex items-center justify-center -rotate-45 font-semibold text-xl"></i></span> <span class="text-3xl font-extrabold">Rinterio</span> </a>
+    <header class="bg-gradient-to-b from-gray-100 to-white px-5">
+      <!-- navigation  -->
+        <nav class="container mx-auto  ">
+            <div class="navbar justify-between py-5">
+                <div class="navbar-start w-2/5">
+                  <a class="flex items-center gap-2"><span><i class="fa-solid fa-arrow-right h-7 w-7 bg-btn-color  text-[#1C1C1C] rounded-full flex items-center justify-center -rotate-45 font-semibold text-xl"></i></span> <span class="text-[1.75rem] lg:text-[2rem] font-extrabold">Rinterio</span> </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 ">
@@ -57,15 +55,22 @@
                   </ul>
                 </div>
                 <div class="navbar-end flex items-center justify-end gap-4 ">
-                    <button class="h-11 w-11 bg-white rounded-full flex items-center justify-center">
+                    <div class="hidden md:block"> 
+                      <button class="h-11 w-11 bg-white rounded-full flex items-center justify-center md:block">
                         <i class="fa-solid fa-magnifying-glass font-semibold"></i>
                     </button>
-                    <button class="h-11 w-11 bg-white rounded-full flex items-center justify-center">
+                    </div>
+                    <div class="hidden md:block">
+                      <button class="h-11 w-11 bg-white rounded-full flex items-center justify-center md:block">
                         <i class="fa-solid fa-cart-shopping font-semibold"></i>
                     </button>
-                    <button class="flex">
+                    </div>
+                    <div class="hidden md:block">
+                      <button class="flex ">
                         <a class="btn bg-btn-color font-bold text-xl rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right h-7 w-7 bg-[#1C1C1C] text-white rounded-full flex items-center justify-center -rotate-45 font-semibold"></i></a>
                     </button>
+                    </div>
+                   <div class="lg:hidden">
                     <div class="dropdown lg:hidden ">
                       <div tabindex="0" role="button" class="flex items-center justify-center h-11 w-11  bg-white rounded-full lg:hidden">
                         <i class="fa-solid fa-bars text-xl"></i>
@@ -80,9 +85,24 @@
                         <li><a>Contact Us</a></li>
                       </ul>
                     </div>
+                   </div>
                 </div>
               </div>
         </nav>
+
+        <!-- Banner  -->
+         <div class="flex items-center justify-center flex-col text-center">
+          <!-- banner image content -->
+           <img src="assets/banner.png" alt="">
+          <!-- banner text content  -->
+           <h1 class="w-11/12 text-color-1 text-[1.75rem] md:text-4xl lg:text-6xl font-extrabold my-6">A barn house of this design has a striking appearance</h1>
+           <p class="w-4/5 text-color-2 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+           <div>
+            <button class="flex ">
+              <a class="btn bg-[#abef5f80] font-bold text-xl rounded-3xl">View Details<i class="fa-solid fa-arrow-right h-7 w-7 bg-btn-color  text-[#1C1C1C] rounded-full flex items-center justify-center -rotate-45 font-semibold"></i></a>
+          </button>
+          </div>
+         </div>
     </header>
     <main>
 
