@@ -38,60 +38,48 @@
 
 </head>
 <body>
-    <header class="container mx-auto border-4">
+    <header class="container mx-auto h-96 bg-gradient-to-b from-gray-100 to-white">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar justify-between">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">Rinterio</a>
+                  <!-- ---------------------- -->
+
+                  <!-- --------------- -->
+                  <a class="flex items-center gap-2"><span><i class="fa-solid fa-arrow-right h-7 w-7 bg-btn-color  text-[#1C1C1C] rounded-full flex items-center justify-center -rotate-45 font-semibold text-xl"></i></span> <span class="text-3xl font-extrabold">Rinterio</span> </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                  <ul class="menu menu-horizontal px-1 ">
+                    <li class="font-extrabold text-color-1"><a>Home</a></li>
                     <li><a>Services</a></li>
                     <li><a>portfolio</a></li>
                     <li><a>Blogs</a></li>
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end flex items-center justify-end gap-4">
-                    <button class="h-8 w-8 bg-gray-300 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="navbar-end flex items-center justify-end gap-4 ">
+                    <button class="h-11 w-11 bg-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass font-semibold"></i>
                     </button>
-                    <button class="h-8 w-8 bg-gray-300 rounded-full flex items-center justify-center">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="h-11 w-11 bg-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-cart-shopping font-semibold"></i>
                     </button>
-                    <button >
-                        <a class="btn bg-btn-color font-extrabold text-xl">Book <i class="fa-solid fa-arrow-right h-8 w-8 bg-[#1C1C1C] text-white rounded-full flex items-center justify-center -rotate-45"></i></a>
+                    <button class="flex">
+                        <a class="btn bg-btn-color font-bold text-xl rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right h-7 w-7 bg-[#1C1C1C] text-white rounded-full flex items-center justify-center -rotate-45 font-semibold"></i></a>
                     </button>
+                    <div class="dropdown lg:hidden ">
+                      <div tabindex="0" role="button" class="flex items-center justify-center h-11 w-11  bg-white rounded-full lg:hidden">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li class="font-extrabold text-color-1"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
                 </div>
               </div>
         </nav>
