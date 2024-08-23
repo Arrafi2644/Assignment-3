@@ -20,6 +20,11 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <style>
+    /* body{
+      background-image: url(assets/bg.jpg);
+    } */
+  </style>
   <script>
     tailwind.config = {
       theme: {
@@ -34,6 +39,9 @@
           },
           fontFamily: {
             Manrope: 'Manrope'
+          },
+          backgroundImage: {
+            'form-bg': "url(./assets/bg.jpg)"
           }
         }
       }
@@ -269,7 +277,7 @@
           <!-- row-1  -->
            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="col-span-1 md:col-span-2 flex flex-col md:flex-row gap-6 p-6 border rounded-2xl bg-white">
-              <img class="w-full md:max-h-[167px] lg:max-h-[180px]" src="assets/img1.png" alt="">
+              <img class="w-full h-[197px] md:h-[167px] lg:h-[180px]" src="assets/img1.png" alt="">
               <div class="flex flex-col gap-4">
                 <h3 class="text-xl md:text-2xl font-extrabold text-color-1">Commercial</h3>
                 <p class="text-color-3 font-medium">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
@@ -281,21 +289,21 @@
               </div>
             </div>
             <div class="p-6 rounded-2xl border bg-white">
-              <img class="w-full md:max-h-[167px] max-h-[180px]" src="assets/img2.png" alt="">
+              <img class="w-full h-[197px] md:h-[167px] lg:h-[180px]" src="assets/img2.png" alt="">
             </div>
             <div class="p-6 block lg:hidden rounded-2xl border bg-white">
-              <img class=" w-full md:max-h-[167px] max-h-[180px]" src="assets/img5.png" alt="">
+              <img class=" w-full h-[197px] md:h-[167px] lg:h-[180px]" src="assets/img5.png" alt="">
             </div>
            </div>
 
            <!-- row-2  -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="p-6 rounded-2xl border bg-white order-3 lg:order-none">
-              <img class="w-full md:max-h-[167px] lg:max-h-[180px]" src="assets/img3.png" alt="">
+              <img class="w-full h-[197px] md:h-[167px] lg:h-[180px]" src="assets/img3.png" alt="">
             </div>
 
             <div class="p-6 rounded-2xl border bg-white col-span-1 md:col-span-2 flex gap-6 flex-col md:flex-row order-1 lg:order-none ">
-              <img class="w-full md:max-h-[167px] lg:max-h-[180px]" src="assets/img4.png" alt="">
+              <img class="h-[197px] md:h-[167px] lg:h-[180px]" src="assets/img4.png" alt="">
               <div class="flex flex-col gap-4 ">
                 <h3 class="text-xl md:text-2xl font-extrabold text-color-1">Commercial</h3>
                 <p class="text-color-3 font-medium">The barn house captivates with its blend of rustic charm and modern. </p>
@@ -308,7 +316,7 @@
             </div>
 
             <div class="p-6 rounded-2xl border bg-white order-3 lg:order-none">
-              <img class="w-full md:max-h-[167px] lg:max-h-[180px]" src="assets/img5.png" alt="">
+              <img class=" w-full h-[197px] md:h-[167px] lg:h-[180px]" src="assets/img5.png" alt="">
             </div>
           </div>
          </div>
@@ -433,6 +441,60 @@
 
       </div>
     </div>
+
+     <!-- Next Project Section  -->
+     <div class="bg-form-bg bg-no-repeat bg-cover bg-opacity-50">
+      <div class=" container mx-auto px-5 py-8 md:py-[4.5rtm] lg:py-[6.25rem]">
+        <!-- section head -->
+        <div class="text-center md:w-4/5 mx-auto">
+          <button class="btn bg-[#abef5f33] border-none rounded-3xl h-0 px-4 py-2 font-bold"><span><i
+                class="fa-solid fa-right-long"></i></span> Let’s Connect</button>
+          <h2 class="text-2xl md:text-[2rem] lg:text-[2.5rem] text-color-1 font-bold leading-tight mt-4 ">Let’s Discuss Next Project</h2>
+          <p class="my-6 text-base leading-[26px] text-color-2 w-full md:w-3/5 mx-auto font-medium">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood,
+            sleek metal accents.
+          </p>
+        </div>
+ 
+        <!-- Section body  -->
+         <div class="md:w-4/5 mx-auto mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-8 md:grid-rows-6 gap-6">
+              <input
+              type="text"
+              placeholder="First Name*"
+              class="input border-none input-primary w-full rounded-full text-base font-medium p-5  " />
+
+              <input
+              type="text"
+              placeholder="Last Name*"
+              class="input border-none input-primary w-full rounded-full text-base font-medium p-5 " />
+
+              <input
+              type="number"
+              placeholder="Phone Number*"
+              class="input border-none input-primary hor w-full rounded-full text-base font-medium p-5 focus:appearance-none"  />
+
+              <input
+              type="email"
+              placeholder="Email Number*"
+              class="input border-none input-primary w-full  text-base font-medium p-5 rounded-full" />
+
+              <textarea
+              placeholder="Write your message here"
+              class="textarea border-none text-base font-medium p-5 w-full rounded-[2rem] col-span-1 md:col-span-2 row-span-3 resize-none"></textarea>
+            <!-- </div> -->
+            <div class=" col-span-1 md:col-span-2">
+              <a class=" flex btn border-none bg-[#ABEF5F] font-bold text-xl rounded-full w-full">Book Consult<i
+                  class="fa-solid fa-arrow-right h-7 w-7 bg-[#1C1C1C]  text-white rounded-full flex items-center justify-center -rotate-45 font-semibold"></i></a>
+            </div>
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+
   </main>
 
   <!-- Footer section  -->
@@ -446,7 +508,7 @@
               wood, sleek metal accents.
             </p>
 
-          <ul class="menu menu-horizontal font-medium text-white mb-8 md:my-16 flex gap-8 md:gap-24 flex-col md:flex-row items-center justify-center">
+          <ul class="menu menu-horizontal font-medium text-white mb-8 md:my-16 flex gap-8 md:gap-16 lg:gap-24 flex-col md:flex-row items-center justify-center">
             <li><a>Home</a></li>
             <li><a>Services</a></li>
             <li><a>portfolio</a></li>
@@ -461,6 +523,7 @@
             </div>
           </div>
        </div>
+
   </footer>
 </body>
 
